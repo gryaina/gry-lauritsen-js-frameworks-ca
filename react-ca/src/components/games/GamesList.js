@@ -26,7 +26,7 @@ function GamesList() {
 
     const filteredArray = games.filter(function(game){
       const lowerCaseName = game.name.toLowerCase();
-      if (lowerCaseName.startsWith(searchValue)) {
+      if (lowerCaseName.includes(searchValue)) {
         return true;
       }
         return false;

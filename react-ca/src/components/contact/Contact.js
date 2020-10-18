@@ -3,7 +3,8 @@ import { useForm } from "react-hook-form";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import * as yup from "yup";
-import ErrorMessage from "./ErrorMessage"
+import ErrorMessage from "./ErrorMessage";
+import { yupResolver } from "@hookform/resolvers/yup";
 
 const schema = yup.object().shape({
   firstName: yup
@@ -21,12 +22,12 @@ const schema = yup.object().shape({
   message: yup
     .string()
     .required("Message is required")
-    .min(10, "Message must be at least 2 characters"),
+    .min(10, "Message must be at least 10 characters"),
 });
 
 function Contact() {
   const { register, handleSubmit, errors } = useForm({
-    validationSchema: schema
+    resolver: yupResolver(schema),
   });
 
   function onSubmit(data) {

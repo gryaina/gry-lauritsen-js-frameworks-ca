@@ -5,8 +5,8 @@ import PropTypes from "prop-types";
 
 export default function Search({ handleSearch }) {
   return (
-    <InputGroup classname="search">
-      <FormControl placeholder="Search for game" onChange={event => handleSearch(event)} />
+    <InputGroup className="search">
+      <FormControl className="searchBar" placeholder="Search for game" onChange={event => handleSearch(event)} />
     </InputGroup>
   );
 }

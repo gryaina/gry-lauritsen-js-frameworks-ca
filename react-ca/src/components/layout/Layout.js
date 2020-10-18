@@ -17,7 +17,7 @@ function Layout() {
 	return (
     <>
   		<Router>
-  			<Navbar bg="dark" variant="dark" expand="lg">
+  			<Navbar className ="heading" bg="dark" variant="dark" expand="lg">
   				<NavLink to="/" exact>
   					<Navbar.Brand>Games</Navbar.Brand>
   				</NavLink>

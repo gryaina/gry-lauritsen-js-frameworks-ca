@@ -19,6 +19,10 @@ body {
   text-overflow: ellipsis;
 }
 
+.card-img-top {
+  height: 150px;
+}
+
 .search {
   margin: 2em 0;
 }
@@ -32,8 +36,8 @@ body {
 }
 
 .detail-image {
-  max-width: 700px;
-  align-self: center;
+  max-width: 400px;
+  margin: 40px 0 40px 0;
 }
 
 .form {
@@ -43,4 +47,14 @@ body {
 .error {
   color: red;
   font-size: bold;
+}
+
+.heading {
+  margin-bottom: 30px;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

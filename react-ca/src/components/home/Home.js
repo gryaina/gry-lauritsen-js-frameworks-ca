@@ -5,7 +5,7 @@ import GamesList from "../games/GamesList";
 export function Home() {
 	return (
 		<>
-			<Heading title="Games to play" />
+			<Heading title="Popular games" />
 			<GamesList />
 		</>
 );

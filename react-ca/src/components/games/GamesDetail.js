@@ -26,7 +26,7 @@ function GamesDetail() {
 	}
 
 	return (
-		<Row>
+		<Row className="detail">
       <Col md={6}>
         <h1>{detail.name}</h1>
       </Col>
